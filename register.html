@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Create Account E-File</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <div class="auth-panel">
+        <a class="brand" href="index.html"><span>EF</span>E-File</a>
+        <div class="auth-box">
+            <p class="eyebrow">GET STARTED</p>
+            <h1>Create your account</h1>
+            <p class="muted">Set up your personal document workspace.</p>
+            <form id="registerForm">
+                <label>Full name
+                    <input id="regName" required placeholder="Your full name">
+                </label>
+                <label>Email
+                    <input id="regEmail" type="email" required placeholder="you@example.com">
+                </label>
+                <label>Password
+                    <input id="regPassword" type="password" minlength="6" required placeholder="At least 6 characters">
+                </label>
+                <label>Confirm password
+                    <input id="regConfirm" type="password" required placeholder="Repeat password">
+                </label>
+                <button class="btn primary full" type="submit">Create account</button>
+                <p id="registerMsg" class="form-msg"></p>
+            </form>
+            <p class="switch">Already have an account? 
+                <a href="login.html">Sign in</a>
+            </p>
+        </div>
+    </div>
+    <div class="auth-art">
+        <div>
+            <span class="art-icon">+</span>
+            <h2>Build your digital filing cabinet.</h2>
+            <p>Create folders, upload documents and find what you need in seconds.</p>
+        </div>
+    </div>
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    </body>
+    </html>

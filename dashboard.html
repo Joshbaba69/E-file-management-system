@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard E-File</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app">
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#"><span>EF</span>E-File</a>
+        <nav>
+            <p class="nav-label">WORKSPACE</p>
+            <a class="side-link active" data-page="dashboard" href="#dashboard">⌂ <span>Dashboard</span></a>
+            <a class="side-link" data-page="files" href="#files">▤ <span>My Files</span></a>
+            <a class="side-link" data-page="folders" href="#folders">▣ <span>Folders</span>
+            </a><a class="side-link" data-page="shared" href="#shared">⇄ <span>Shared</span>
+            </a><a class="side-link" data-page="trash" href="#trash">⌫ <span>Trash</span><i id="trashCount"></i></a><p class="nav-label">ACCOUNT</p>
+            <a class="side-link" data-page="profile" href="#profile">◉ <span>Profile</span></a>
+        </nav>
+        <button class="logout side-link" id="logoutBtn">↪ <span>Log out</span></button>
+    </aside>
+<div class="app-main">
+    <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div class="top-title">
+            <span id="pageKicker">OVERVIEW</span>
+            <h2 id="pageTitle">Dashboard</h2>
+        </div>
+        <div class="top-actions">
+            <button class="icon-btn" id="quickUpload">＋</button>
+            <div class="avatar" id="avatar">U</div>
+        </div>
+    </header>
+<main class="content" id="content"></main></div>
+<div class="modal" id="modal">
+    <div class="modal-box" id="modalBox"></div>
+</div>
+<input type="file" id="fileInput" multiple hidden>
+<script src="js/storage.js"></script>
+<script src="js/dashboard.js">
+
+</script>
+</body>
+</html>
